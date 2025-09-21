@@ -1,10 +1,21 @@
+# ---------------------------------------------------------
+#  Bluetooth Auto-Reconnect Service
+#  Author: Vaibhav Oza
+#  GitHub: https://github.com/vaibhavoza
+#  Created: 2025
+#  Description:
+#    - Runs bt-reconnect.sh in the background
+#    - Uses systemd to auto-start and auto-restart the script
+# ---------------------------------------------------------
+
 [Unit]
-Description=Auto Reconnect Bluetooth Keyboards
+Description=Auto Reconnect Pebble Keys 2 K380 Keyboard
 After=bluetooth.target
 
 [Service]
 ExecStart=/usr/bin/bt-reconnect.sh
 Restart=always
+User=oza
 
 [Install]
 WantedBy=multi-user.target
