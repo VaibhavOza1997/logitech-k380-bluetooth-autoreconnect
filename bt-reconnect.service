@@ -1,0 +1,10 @@
+[Unit]
+Description=Auto Reconnect Bluetooth Keyboards
+After=bluetooth.target
+
+[Service]
+ExecStart=/usr/bin/bt-reconnect.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
