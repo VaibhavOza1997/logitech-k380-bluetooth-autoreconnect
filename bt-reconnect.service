@@ -15,7 +15,7 @@ After=bluetooth.target
 [Service]
 ExecStart=/usr/bin/bt-reconnect.sh
 Restart=always
-User=oza
+User=userid #Update userid
 
 [Install]
 WantedBy=multi-user.target
