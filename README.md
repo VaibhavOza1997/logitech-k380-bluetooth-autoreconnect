@@ -44,24 +44,21 @@ To avoid permission or SELinux issues, use these paths:
 
 3. Find your keyboard’s MAC address:
 
-       Command:
-         bluetoothctl devices Paired
-       Output Example
-         Device XX:XX:XX:XX:XX:XX Pebble K380s
+       bluetoothctl devices Paired
+   
+   Output Example:
+      Device XX:XX:XX:XX:XX:XX Pebble K380s
 
 5. ⚡ Setup Instructions
 
 a. Clone the repo:
 
-    Command:
-      git clone https://github.com/vaibhavoza/logitech-k380-bluetooth-autoreconnect.git
-      cd logitech-k380-bluetooth-autoreconnect
-
+    git clone https://github.com/vaibhavoza/logitech-k380-bluetooth-autoreconnect.git
+    cd logitech-k380-bluetooth-autoreconnect
 
 b. Edit the script and set your MAC:
    
-    Command:
-      nano bt-reconnect.sh
+    nano bt-reconnect.sh
 
 c. Update this line:
 
@@ -95,7 +92,6 @@ g. Verify status:
 
        bluetoothctl disconnect XX:XX:XX:XX:XX:XX
 
-
    Confirm it reconnects automatically:
 
        bluetoothctl info XX:XX:XX:XX:XX:XX | grep Connected
@@ -110,8 +106,7 @@ g. Verify status:
 
        sleep 10   # check every 10 seconds
 
-
-Extra:
+Additional Setup instructions (Optional):
 Works with any Bluetooth device — just replace the MAC.
 
 Supports multiple devices by extending the script:
