@@ -49,7 +49,7 @@ To avoid permission or SELinux issues, use these paths:
    Output Example:
       Device XX:XX:XX:XX:XX:XX Pebble K380s
 
-5. ⚡ Setup Instructions
+4. ⚡ Setup Instructions
 
 a. Clone the repo:
 
@@ -82,7 +82,7 @@ g. Verify status:
 
     systemctl status bt-reconnect.service
 
-6. 🔍 Testing & Logs
+5. 🔍 Testing & Logs
 
    Watch logs live:
 
@@ -100,7 +100,7 @@ g. Verify status:
 
        Connected: yes
 
-7. 🛠️ Customization
+6. 🛠️ Customization
 
    Change reconnect interval in bt-reconnect.sh:
 
